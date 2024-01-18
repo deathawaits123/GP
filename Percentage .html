@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Percentage </title>
+    <link rel="stylesheet" href="Student.css">
+
+    <style>
+      .logo {
+          position: fixed;
+          top: 20px;
+          left: 20px;
+          width: 100px; /* قم بتعديل العرض والارتفاع حسب حجم الصورة الخاصة بك */
+          height: auto;
+      }
+  </style>
+  
+   <a href="index.html"> <img class="logo" src="Student_Percentage_Calculator.png" alt="شعار الصورة">   </a>
+</head>
+<body>
+    <h1>Student Percentage Calculator</h1>
+    <table id="gradesTable">
+      <tr>
+        <th>Subject</th>
+        <th>Hours</th>
+        <th>Grade</th>
+      </tr>
+      <!-- Add rows for each subject -->
+      <tr>
+        <td><input type="text" class="subject" placeholder="Subject 1"></td>
+        <td><input type="number" class="hours" placeholder="Hours"></td>
+        <td><input type="number" class="grade" placeholder="Grade"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="subject" placeholder="Subject 2"></td>
+        <td><input type="number" class="hours" placeholder="Hours"></td>
+        <td><input type="number" class="grade" placeholder="Grade"></td>
+      </tr>
+      <tr>
+        <td><input type="text" class="subject" placeholder="Subject 3"></td>
+        <td><input type="number" class="hours" placeholder="Hours"></td>
+        <td><input type="number" class="grade" placeholder="Grade"></td>
+      </tr>
+      <!-- Add more rows for other subjects -->
+    </table>
+    <button onclick="addSubjectRow()">Add Subject</button>
+    <hr>
+    <div id="result"></div>
+    <button onclick="calculateCertificate()">Calculate Certificate</button>
+
+<h4>إذا كنت ترغب في حساب المعدل التراكمي من ,  <a href="Calculator.html">( هنا )</a>
+</h4>    
+
+<script src="Student.js"></script>
+</body>
+</html>
